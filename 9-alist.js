@@ -13,15 +13,24 @@ If you haven’t already, also write a recursive version of nth.
 
 function arrayToList(array){
   var list = {};
-  list.value = array[0];
-  list.rest = {value: array[1], rest: null}
+  var hold = null;
+  for (var x = array.length-1; x >= 0; x--){
+    hold = list;
+    list = {value: array[x], rest: hold}
+  }
   return list;
 }
 
 function listToArray(list){
-}
+  array = [];
+  for (var node = list; node; node = node.rest){
+    array.push(node.value);
+  }
+  return array;
+}  
 
 function prepend(element, list) {
+  
 }
 
 function nth(list, number){
