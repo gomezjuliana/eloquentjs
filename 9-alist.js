@@ -29,9 +29,16 @@ function listToArray(list){
   return array;
 }  
 
-function prepend(element, list) {
-  
+function prepend(value, list) {
+  return {value: value, rest: list}  
 }
 
 function nth(list, number){
+  listToArray(list)
+  if (array[number] === undefined){
+  return undefined
+  } else {
+  var x = array[number];
+  return x; 
+  }
 }
