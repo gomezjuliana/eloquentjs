@@ -1,1 +1,1 @@
-These are exercises from the book [Eloquent Javascript] (http://eloquentjavascript.net/) by Marijn Haverbeke
+These are exercises from the book [Eloquent Javascript](http://eloquentjavascript.net/) by Marijn Haverbeke
